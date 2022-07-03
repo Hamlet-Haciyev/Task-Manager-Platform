@@ -1,0 +1,64 @@
+.register__wrapper {
+  padding: 30px 10px;
+  height: 400px;
+  width: 400px;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  margin: 0 auto;
+  background-color: white;
+  border-radius: 5px;
+}
+
+.register__wrapper .form {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.register__wrapper label {
+  width: 100px;
+}
+
+.register__wrapper input {
+  width: 200px;
+  padding: 3px 10px;
+  outline: none;
+  border-radius: 3px;
+  border: 1px solid;
+}
+.register__wrapper input:focus {
+  border: 1px solid gold;
+}
+
+.register__wrapper .title {
+  text-align: center;
+  margin-bottom: 15px;
+}
+
+.register__wrapper .btn {
+  display: block;
+}
+
+.register__wrapper .formControl {
+  display: flex;
+  width: 300px;
+  margin-bottom: 15px;
+}
+.signup__container {
+  display: flex;
+  align-items: center;
+  background-color: purple;
+  height: 630px;
+}
+.singup__btn {
+  width: 90px;
+  height: 40px;
+  cursor: pointer;
+  border: none;
+  background-color: #ff802b;
+  text-align: center;
+  padding: 10px;
+  border-radius: 10px;
+  font-size: 1em;
+  color: #4c4c4c;
+}

@@ -1,0 +1,22 @@
+.navbar {
+  border-bottom: 1px solid black;
+}
+ul {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 90px;
+  list-style-type: none;
+}
+a {
+  display: inline-block;
+  text-decoration: none;
+}
+li {
+  display: inline-block;
+  margin: 0 20px;
+}
+.wrapper {
+  max-width: 1440px;
+  margin: 0 auto;
+}

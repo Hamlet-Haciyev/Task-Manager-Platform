@@ -1,0 +1,207 @@
+main {
+  background-color: #252595;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  height: 580px;
+}
+section {
+  display: flex;
+  max-width: 1100px;
+  width: 1100px;
+  margin: 0 auto;
+  padding: 20px 0;
+  justify-content: space-between;
+  padding: 40px 50px;
+  overflow: auto;
+  border: 1px solid white;
+  height: 500px;
+}
+.addTask {
+  display: block;
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  background-color: green;
+  border: none;
+  cursor: pointer;
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  font-size: 20px;
+  margin: 0 auto;
+  font-weight: bold;
+}
+.task {
+  border: 1px solid rgb(182, 174, 174);
+  padding: 10px 20px;
+  width: 300px;
+  height: 300px;
+  border-radius: 2px;
+}
+
+.statusLine h3 {
+  text-align: center;
+  margin-bottom: 20px;
+}
+.saveBtn {
+  display: flex;
+  align-items: center;
+  margin: 10px auto;
+  padding: 5px 10px;
+  background-color: green;
+  border: 1px solid transparent;
+}
+.saveBtn:hover {
+  background-color: rgb(22, 178, 22);
+}
+.button {
+  cursor: pointer;
+}
+.collapsed input {
+  display: block;
+}
+.selected {
+  color: rgb(45, 56, 54);
+  font-weight: bold;
+}
+.movetask {
+  font-size: 1.5rem;
+  padding: 0.5rem 0.5rem;
+  margin-bottom: 0;
+  line-height: 1rem;
+}
+.urgencyLabels {
+  display: flex;
+  justify-content: space-between;
+  max-width: 180px;
+  margin: 0 auto;
+}
+.urgencyLabels label {
+  text-transform: uppercase;
+  padding: 10px;
+}
+.urgencyLabels label input {
+  display: none;
+}
+.low {
+  background-color: green;
+}
+.low:hover {
+  cursor: pointer;
+  background-color: rgb(19, 220, 19);
+  border-color: rgb(19, 220, 19);
+}
+.medium {
+  background-color: yellow;
+}
+.medium:hover {
+  cursor: pointer;
+  background-color: rgb(255, 255, 34);
+  border-color: rgb(255, 255, 34);
+}
+.high {
+  background-color: pink;
+}
+.high:hover {
+  cursor: pointer;
+  background-color: rgb(255, 213, 220);
+  border-color: rgb(255, 213, 220);
+}
+.collapsed .actions {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin: 10px 0;
+}
+
+.collapsedTask .delete {
+  background-color: pink;
+  border-color: pink;
+  cursor: pointer;
+  margin-left: 5px;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+}
+.collapsedTask .editBtn {
+  background-color: rgb(90, 90, 203);
+  border-color: rgb(90, 90, 203);
+  cursor: pointer;
+  margin-left: 5px;
+  padding: 5px 10px;
+  border: 1px solid transparent;
+}
+.collapsedTask .delete:hover {
+  background-color: red;
+  border-color: red;
+}
+.collapsedTask .editBtn:hover {
+  background-color: rgb(50, 50, 237);
+  border-color: rgb(50, 50, 237);
+}
+
+.task input {
+  background-color: transparent;
+  border: 1px solid transparent;
+  border-radius: 0.25rem;
+  color: white;
+  text-align: center;
+  resize: none;
+  display: flex;
+  outline: none;
+  width: 100%;
+  padding: 10px;
+}
+
+.task input:hover {
+  cursor: pointer;
+  border: 1px solid white;
+}
+
+.task input:focus {
+  outline: none;
+  border-color: gold;
+  color: gold;
+}
+
+.task input::placeholder {
+  color: white;
+}
+
+.task .description {
+  margin-top: 0.5rem;
+  margin-bottom: 0.5rem;
+  padding: 0.5rem;
+  width: 100%;
+  font-size: 1rem;
+  outline: none;
+  background-color: transparent;
+  resize: none;
+  padding: 10px;
+  border: 1px solid transparent;
+  color: white;
+  text-align: center;
+  border-radius: 0.25rem;
+}
+.task .description:focus {
+  outline: none;
+  border-color: gold;
+  color: gold;
+}
+.task .description:hover {
+  cursor: text;
+  border: 1px solid white;
+}
+
+.statusLine .task {
+  margin-bottom: 15px;
+  margin-right: 10px;
+}
+
+section::-webkit-scrollbar {
+  width: 5px;
+}
+section::-webkit-scrollbar-thumb {
+  background-color: black;
+}
+section::-webkit-scrollbar-track {
+  background-color: #eee;
+}
